@@ -1,15 +1,14 @@
 const express = require("express");
-//const cors = require("cors");
+const cors = require("cors");
 
 const app = express();
 
-// parse requests of content-type - application/json
-app.use(express.json());
-
-// parse requests of content-type - application/x-www-form-urlencoded
+app.use(cors());              // enable CORS
+app.use(express.json());      // parse application/json
 app.use(express.urlencoded({ extended: true }));
 
 const db = require("./app/models");
+
 db.mongoose
   .connect(db.url, {
     useNewUrlParser: true,
@@ -28,10 +27,10 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to Test application." });
 });
 
-require("./app/routes/turorial.routes")(app);
+require("./app/routes/tutorial.routes")(app);
 
-// set port, listen for requests
 const PORT = process.env.PORT || 8080;
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
