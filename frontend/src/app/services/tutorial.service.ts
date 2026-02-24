@@ -3,8 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Tutorial } from '../models/tutorial.model';
 
-const baseUrl = 'http://18.212.238.183:8080/api/tutorials';
-
+private baseUrl = '/api/tutorials';
 @Injectable({
   providedIn: 'root'
 })
