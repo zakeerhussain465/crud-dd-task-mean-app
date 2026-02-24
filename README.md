@@ -295,6 +295,11 @@ Client → Port 80 → Nginx
 ✔ All containers running via Docker Compose
 ✔ CI/CD automatically updates deployment
 
+## Live Application (AWS EC2 – Port 80)
+
+http://34.236.233.60
+access only when instance is running.
+
 ## 🧪 Run Locally
 docker compose up --build
 
