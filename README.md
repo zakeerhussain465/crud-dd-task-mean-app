@@ -1,4 +1,4 @@
-### MEAN Stack CRUD Application with CI/CD & Nginx Reverse Proxy
+# MEAN Stack CRUD Application with CI/CD & Nginx Reverse Proxy
 ## 📌 Project Overview
 
 This project demonstrates a full-stack CRUD application built using the MEAN stack (MongoDB, Express, Angular, Node.js).
@@ -66,14 +66,23 @@ Nginx Reverse Proxy
 ## 📁 Project Structure
 .
 ├── backend/
+
 │   ├── Dockerfile
+
 │   └── (Node.js source files)
+
 ├── frontend/
+
 │   ├── Dockerfile
+
 │   └── (Angular source files)
+
 ├── docker-compose.yml
+
 ├── nginx.conf
+
 └── .github/workflows/deploy.yml
+
 ## 🐳 Docker Configuration
 Backend Dockerfile
 
@@ -134,6 +143,8 @@ Restart containers using Docker Compose
 
 Docker builds use --no-cache to prevent stale Angular builds.
 
+
+
 ## ☁️ AWS EC2 Deployment
 1️⃣ Launch EC2
 
@@ -152,6 +163,7 @@ docker compose up -d
 Application will be available at:
 
 http://<EC2-PUBLIC-IP>
+
 ## 🌐 Nginx Reverse Proxy Configuration
 
 Nginx serves the Angular frontend and proxies API requests.
@@ -181,6 +193,8 @@ API accessed via /api/*
 Example:
 
 http://<EC2-IP>/api/tutorials
+
+
 ## 🔍 Verification
 
 ✔ Application accessible via port 80
