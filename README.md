@@ -116,6 +116,16 @@ mean-nginx
 
 All services run inside the same Docker network.
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/15d665c7-9e78-4bf4-8ead-f1ea74d70d9d" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/076ba8f4-9138-430c-93e0-90aa18f4a18f" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/df63a731-551a-483e-9bf0-ec8b9333f115" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3cf568c0-bcb1-4111-9993-a06d035c75ed" />
+
+
+
 ## 🔁 CI/CD Pipeline (GitHub Actions)
 
 Location:
@@ -164,6 +174,9 @@ Application will be available at:
 
 http://<EC2-PUBLIC-IP>
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/341f939e-4deb-4b6b-8721-dbc883bfaa6e" />
+
+
 ## 🌐 Nginx Reverse Proxy Configuration
 
 Nginx serves the Angular frontend and proxies API requests.
@@ -194,6 +207,20 @@ Example:
 
 http://<EC2-IP>/api/tutorials
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/d4a0040d-643b-4c00-9425-8a29f6bd67cb" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/23f3ee12-9e3f-4b9d-8efe-74c4cd6130e8" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a1dcbcb5-70f5-4948-8ba8-a30b9981782d" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/726544d5-28a4-492e-8b85-430a0ef9ab0e" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3871ef4d-c8ce-455c-87fc-2afd0545da2e" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2cccdc80-b69a-48da-8207-9d8c363fea26" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f8200f9c-9871-4152-9469-61a68c9e5fc1" />
+
 
 ## 🔍 Verification
 
@@ -202,3 +229,35 @@ http://<EC2-IP>/api/tutorials
 ✔ Containers running via Docker Compose
 ✔ CI/CD automatically updates deployment
 ✔ Angular calls API using /api/tutorials
+
+## 🧪 How to Run Locally
+docker compose up --build
+
+Access locally at:
+
+http://localhost
+## 🔐 Security Notes
+
+Secrets stored in GitHub Secrets
+
+No credentials committed
+
+Backend not exposed directly to internet
+
+MongoDB runs inside internal Docker network
+
+## 📄 Conclusion
+
+This project demonstrates:
+
+Full containerization
+
+Automated CI/CD pipeline
+
+Cloud deployment on EC2
+
+Reverse proxy configuration
+
+Production-style Docker architecture
+
+It reflects practical DevOps implementation and deployment best practices.
